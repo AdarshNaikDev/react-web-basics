@@ -1,15 +1,29 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
- <h1>Hello React !!</h1>
+// var React = require("react")
+//befor es6 everyone used to use require function to import modules 
+// var ReactDOM = require("react-dom")
+import React from 'react'
+import ReactDOM from 'react-dom'
+//inside render method what to show where to show and a callback function is mentioned
+ReactDOM.render(
+    //to render multiple jsx elements use div tag
+    // <div>
+    // <h1>hello typescript</h1>
+    // <p>Using two jsx elements enclosed by a div</p>
+    
+    // </div>,
+    // [
+    //     <h1>hello world!</h1>,
+    //     <h2>some text</h2>,
+    //     <p>lorem ipsum</p>,
+    //     <p>jsx elemnts can be rendered via array of elements</p>
+    //    //jsx elements h1 p can be rendered as array of objects 
+    // ],
+    //open and close bracket can be used or React.fragment can also be used 
+    <>
+        <h1>hello world!</h1>
+         <h2>some text</h2>
+         <p>lorem ipsum</p>
+        <p>jsx elemnts can be rendered via array of elements</p>
+    </>,
+    document.getElementById("root")
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
